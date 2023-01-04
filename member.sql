@@ -16,10 +16,12 @@
 
 
 -- Dumping database structure for itt632
+DROP DATABASE IF EXISTS `itt632`;
 CREATE DATABASE IF NOT EXISTS `itt632` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
 USE `itt632`;
 
 -- Dumping structure for table itt632.member
+DROP TABLE IF EXISTS `member`;
 CREATE TABLE IF NOT EXISTS `member` (
   `id` varchar(10) DEFAULT NULL,
   `name` varchar(150) DEFAULT NULL,
@@ -30,9 +32,9 @@ CREATE TABLE IF NOT EXISTS `member` (
 
 -- Dumping data for table itt632.member: ~4 rows (approximately)
 INSERT INTO `member` (`id`, `name`, `role`, `avatar`, `ig`) VALUES
-	('2021114465', 'Hafiz Fadhlan', 'Founder', 'lan.jpg', 'hfzfdhlan'),
-	('2021114465', 'Che Wan', 'Manager', 'chewan.jpg', 'ciwanimran'),
-	('2021114465', 'Wan Ilhami', 'Senior Developer', 'wan.jpeg', 'wan.ilhami'),
+	('2021340595', 'Hafiz Fadhlan', 'Founder', 'lan.jpg', 'hfzfdhlan'),
+	('2021102813', 'Che Wan', 'Manager', 'chewan.jpg', 'ciwanimran'),
+	('2021102469', 'Wan Ilhami', 'Senior Developer', 'wan.jpeg', 'wan.ilhami'),
 	('2021114465', 'Noor Aiman', 'Senior Developer', 'aiman.jpg', 'nooraimanz');
 
 /*!40103 SET TIME_ZONE=IFNULL(@OLD_TIME_ZONE, 'system') */;
