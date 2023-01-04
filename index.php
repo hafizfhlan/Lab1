@@ -158,7 +158,7 @@ body{margin-top:20px;}
 
         <div class="row">
             <?php 
-            $stmt = $conn->prepare("SELECT * FROM member");
+            $stmt = $conn->prepare("SELECT * FROM member ORDER by 3 ASC,2 ASC");
             $stmt->execute();
             while($row = $stmt->fetch(PDO::FETCH_ASSOC)) 
             {
